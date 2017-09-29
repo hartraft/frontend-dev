@@ -19,12 +19,12 @@ Haven't used before:
 * CoffeeScript
 * Slim
 
-###JS Module Loaders (runtime):
+### JS Module Loaders (runtime):
 Loads modules and dependencies in the correct order at runtime.
 * [RequireJS](http://requirejs.org/) :loader for modules in AMD format.
 * [SystemJs](https://github.com/systemjs/systemjs) :loader for modules in AMD,CommonJS, UMD.
 
-JS Module bundlers (compile time):
+### JS Module bundlers (compile time):
 Bundlers essentially concat all the JS needed for a module and handles treeshaking (removing unnecessary dependencies). It also sees any dependency issues on compile time.
 * Browserify :bundler for CommonJS modules
 * Webpack :bundler for AMD,CommonJS,ES6 modules
