@@ -29,3 +29,26 @@ Bundlers essentially concat all the JS needed for a module and handles treeshaki
 * Browserify :bundler for CommonJS modules
 * Webpack :bundler for AMD,CommonJS,ES6 modules
 * Rollup.js :bundler for AMD,UMD,CommonJS,ES6 modules (mainly described in angular.io docs)
+
+
+## ES6 / ES2015
+From the [rollup site](https://rollupjs.org/#tree-shaking)
+> the ES6 revision of JavaScript includes a syntax for importing and exporting functions and data so they can be shared between separate scripts. The specification is now fixed, but it is not yet implemented in browsers or Node.js.
+
+### CommonJS, the entire tool or library must be imported:
+```javascript
+// import the entire utils object with CommonJS
+var utils = require( 'utils' );
+var query = 'Rollup';
+// use the ajax method of the utils object
+utils.ajax( 'https://api.example.com?search=' + query ).then( handleResponse );
+```
+
+### ES6 modules, instead of importing the whole utils object, we can just import the one ajax function we need:
+```javascript
+// import the ajax function with an ES6 import statement
+import { ajax } from 'utils';
+var query = 'Rollup';
+// call the ajax function
+ajax( 'https://api.example.com?search=' + query ).then( handleResponse );
+```
