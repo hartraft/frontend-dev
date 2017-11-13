@@ -8,3 +8,5 @@ Notes on the state of frontend development
 
 [Using Renderer2 to manipulate the DOM](https://alligator.io/angular/using-renderer2/)
 
+[Angular 2+ Rookie mistakes](http://angularjs.blogspot.be/2016/04/5-rookie-mistakes-to-avoid-with-angular.html)
+
